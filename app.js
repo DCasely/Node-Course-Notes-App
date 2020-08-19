@@ -1,5 +1,6 @@
-const validator = require('validator');
+const chalk = require('chalk');
 
-const testURL = validator.isURL('https://davincasely.com');
+console.log(chalk.green.bold('Success!'));
+console.log(chalk.red('Warning!'));
 
-console.log(testURL);
+console.log(chalk.white.inverse('done'));
