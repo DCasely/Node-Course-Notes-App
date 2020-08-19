@@ -1,3 +1,5 @@
-const notes = require('./notes.js');
+const validator = require('validator');
 
-console.log(notes());
+const testURL = validator.isURL('https://davincasely.com');
+
+console.log(testURL);

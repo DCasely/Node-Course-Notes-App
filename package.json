@@ -1,0 +1,23 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "description": "Notes App from Node Course ---",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DCasely/Node-Course-Notes-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DCasely/Node-Course-Notes-App/issues"
+  },
+  "homepage": "https://github.com/DCasely/Node-Course-Notes-App#readme",
+  "dependencies": {
+    "validator": "^10.11.0"
+  }
+}
