@@ -1,6 +1,8 @@
 const chalk = require('chalk');
 
-console.log(chalk.green.bold('Success!'));
-console.log(chalk.red('Warning!'));
+const command = process.argv[2];
 
-console.log(chalk.blue.inverse('done'.toUpperCase()));
+console.log(process.argv[3]);
+
+if (command === 'add') console.log('Adding note');
+if (command === 'remove') console.log('Removing note');
