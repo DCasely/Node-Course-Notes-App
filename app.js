@@ -2,7 +2,7 @@ const chalk = require('chalk');
 const yargs = require('yargs');
 const notes = require('./notes.js');
 
-// Customize yargs verfsion
+// Customize yargs version
 yargs.version('1.1.0');
 
 // Create add command
@@ -21,7 +21,8 @@ yargs.command({
       type: 'string',
     },
   },
-  handler: function (argv) {
+
+  handler(argv) {
     notes.addNote(argv.title, argv.body);
     console.log(chalk.green.inverse('Note Added'));
   },
@@ -38,7 +39,8 @@ yargs.command({
       type: 'string',
     },
   },
-  handler: function (argv) {
+
+  handler(argv) {
     notes.removeNote(argv.title);
   },
 });
@@ -47,7 +49,8 @@ yargs.command({
 yargs.command({
   command: 'read',
   describe: 'Read a new note',
-  handler: function () {
+
+  handler() {
     console.log('Reading a new note!');
   },
 });
@@ -56,7 +59,8 @@ yargs.command({
 yargs.command({
   command: 'list',
   describe: 'List a new note',
-  handler: function () {
+
+  handler() {
     console.log('Listing a new note!');
   },
 });
