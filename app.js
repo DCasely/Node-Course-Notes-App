@@ -24,7 +24,6 @@ yargs.command({
 
   handler(argv) {
     notes.addNote(argv.title, argv.body);
-    console.log(chalk.green.inverse('Note Added'));
   },
 });
 
