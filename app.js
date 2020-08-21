@@ -44,6 +44,16 @@ yargs.command({
   },
 });
 
+// Create list command
+yargs.command({
+  command: 'list',
+  describe: 'List a new note',
+
+  handler() {
+    notes.listNotes();
+  },
+});
+
 // Create read command
 yargs.command({
   command: 'read',
@@ -51,16 +61,6 @@ yargs.command({
 
   handler() {
     console.log('Reading a new note!');
-  },
-});
-
-// Create list command
-yargs.command({
-  command: 'list',
-  describe: 'List a new note',
-
-  handler() {
-    console.log('Listing a new note!');
   },
 });
 
